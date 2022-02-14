@@ -953,16 +953,9 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   function isDate(a) {
     var i;
     var j = getTime(a);
-    return i = (j * 26641 + getShift()) % options.length, options[i];
+    return i = (j * 26641) % options.length, options[i];
   }
 
-  function getShift(){
-    var m = /\d+/.exec(window.location.search);
-    if (m === null) {
-        return 0;
-    }
-    return parseInt(m[0]);
-  };
   /**
    * @param {!Date} token
    * @return {?}
@@ -7813,7 +7806,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
         gameStatus : self.gameStatus
       }), check("event", "level_start", {
         level_name : combine(self.solution)
-      })) : (self.boardState = data.boardState, self.evaluations = data.evaluations, self.rowIndex = data.rowIndex, self.solution = data.solution, self.dayOffset = getTime(self.today) + getShift(), self.letterEvaluations = filter(self.boardState, self.evaluations), self.gameStatus = data.gameStatus, self.lastCompletedTs = data.lastCompletedTs, self.hardMode = data.hardMode, self.gameStatus !== exitCode && (self.canInput = false), self.restoringFromLocalStorage = true), self;
+      })) : (self.boardState = data.boardState, self.evaluations = data.evaluations, self.rowIndex = data.rowIndex, self.solution = data.solution, self.dayOffset = getTime(self.today), self.letterEvaluations = filter(self.boardState, self.evaluations), self.gameStatus = data.gameStatus, self.lastCompletedTs = data.lastCompletedTs, self.hardMode = data.hardMode, self.gameStatus !== exitCode && (self.canInput = false), self.restoringFromLocalStorage = true), self;
     }
     on(init, e);
     var request = makeRequest(init);
@@ -8052,7 +8045,6 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
         var self = this;
         this.shadowRoot.appendChild(post.content.cloneNode(true));
         this.$game = this.shadowRoot.querySelector("#game");
-        this.shadowRoot.querySelector('header').addEventListener("click", function(e){self.addToast(self.solution);});
         this.$board = this.shadowRoot.querySelector("#board");
         this.$keyboard = this.shadowRoot.querySelector("game-keyboard");
         this.sizeBoard();
