@@ -922,17 +922,17 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
     /** @type {!Array} */
     switch(number) {
       case 1:
-        return "Першая";
+        return "Pieršaja";
       case 2:
-        return "Другая";
+        return "Druhaja";
       case 3:
-        return "Трэцяя";
+        return "Treciaja";
       case 4:
-        return "Чацвёртая";
+        return "Čacviortaja";
 	  case 5:
-        return "Пятая";
+        return "Piataja";
     }
-	return number + "-я";
+	return number + "-ja";
   }
   /**
    * @param {!Date} obj
@@ -2070,7 +2070,8 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   /** @type {!Element} */
   var nodes = document.createElement("template");
   /** @type {string} */
-  nodes.innerHTML = '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Складаны варыянт</div>\n          <div class="description">Кожная падказка павінна быць выкарыстана ў наступных спробах.</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Цёмная тэма</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Кантрасныя колеры</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Водгук</div>\n        </div>\n        <div class="control">\n      <a href="https://t.me/dzimdziam" target="blank" title="tg: @dzimdziam">Telegram</a>\n        </div>\n      </div>\n    </section>\n <section>\n      <div class="setting">\n        <div class="text">\n          <p>Аўтар арыгінальнай гульні: Джош Уордл. Згуляць на ангельскай мове можна <a href = "https://www.powerlanguage.co.uk/wordle/">па спасылцы</a>.<br>Перакладзена на беларускую мову з дапамогай слоўнікаў з <a href="http://www.slounik.org/">Энцыкляпедыі электроннай</a> і <a href="http://www.knihi.com/">Беларускай палічкі</a>.</p>\n    </section>\n  </div>\n  <div id="footnote">\n    <div>\n      <div id="puzzle-number"></div>\n </div>\n  </div>\n';
+  nodes.innerHTML = '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>' +
+  '<div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Skladany varyjant</div>\n          <div class="description">Kožnaja padkazka pavinna być vykarystana ŭ nastupnych sprobach.</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Ciomnaja tema</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Kantrasnyja koliery</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Vodhuk</div>\n        </div>\n        <div class="control">\n      <a target="blank" href="https://t.me/dzimdziam" target="blank" title="tg: @dzimdziam">Telegram</a>\n        </div>\n      </div>\n    </section>\n <section>\n      <div class="setting">\n        <div class="text">\n          <p>Aŭtar aryhinaĺnaj huĺni: Džoš Uordl. Zhuliać na anhieĺskaj movie možna <a target="blank" href = "https://www.powerlanguage.co.uk/wordle/">pa spasylcy</a>. <br>Perakladziena bielaruskaj lacinkaj z dapamohaj <a target="blank" href="https://bnkorpus.info/">Bielaruskaha N-korpusa</a> і <a target="blank" href="https://ololophilolo.github.io/wordle-by/">kiryličnaj viersii Uordli pa-bielarusku</a>.</p>\n    </section>\n  </div>\n  <div id="footnote">\n    <div>\n      <div id="puzzle-number"></div>\n </div>\n  </div>\n';
   var XelDemoElement = function(e) {
     /**
      * @return {?}
@@ -2238,7 +2239,6 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "niuch",
 "ikona",
 "krylo",
-"trona",
 "fokus",
 "utaić",
 "hieta",
@@ -2461,7 +2461,6 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "lyžka",
 "byvać",
 "hareć",
-"kremĺ",
 "piaro",
 "burny",
 "nasyp",
@@ -3007,7 +3006,6 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "niuch",
 "ikona",
 "krylo",
-"trona",
 "fokus",
 "utaić",
 "hieta",
@@ -6797,7 +6795,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "abmor",
 "podać",
 "indol",
-"Аlach",
+"alach",
 "dynas",
 "frank",
 "ijena",
@@ -7377,7 +7375,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "tryzm",
 "radny",
 "aksil",
-"Нojeŭ",
+"hojeŭ",
 "vobad",
 "skrab",
 "dahon",
@@ -7721,6 +7719,8 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "hitan",
 "prynt",
 "člien",
+"kremĺ",
+"trona",
   ];
   /** @type {string} */
   var c = "present";
@@ -7763,7 +7763,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   /** @type {!Element} */
   var post = document.createElement("template");
   /** @type {string} */
-  post.innerHTML = "\n  <style>\n  .toaster {\n    position: absolute;\n    top: 10%;\n    left: 50%;\n    transform: translate(-50%, 0);\n    pointer-events: none;\n    width: fit-content;\n  }\n  #game-toaster {\n    z-index: ".concat(1E3, ";\n  }\n  #system-toaster {\n    z-index: ").concat(4E3, ';\n  }\n\n  #game {\n    width: 100%;\n    max-width: var(--game-max-width);\n    margin: 0 auto;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n  }\n  header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: var(--header-height);\n    color: var(--color-tone-1);\n    border-bottom: 1px solid var(--color-tone-4);\n  }\n  header .title {\n    font-weight: 700;\n    font-size: 36px;\n    letter-spacing: 0.2rem;\n    text-transform: uppercase;\n    text-align: center;\n    position: absolute;\n    left: 0;\n    right: 0;\n    pointer-events: none;\n  }\n\n  @media (max-width: 360px) {\n    header .title {\n      font-size: 22px;\n      letter-spacing: 0.1rem;\n    }\n  }\n\n  #board-container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n    overflow: hidden;\n  }\n  #board {\n    display: grid;\n    grid-template-rows: repeat(6, 1fr);\n    grid-gap: 5px;\n    padding:10px;\n    box-sizing: border-box;\n  }\n  button.icon {\n    background: none;\n    border: none;\n    cursor: pointer;\n    padding: 0 4px;\n  }\n\n  #debug-tools {\n    position: absolute;\n    bottom: 0;\n  }\n\n  </style>\n  <game-theme-manager>\n    <div id="game">\n      <header>\n        <div class="menu">\n          <button id="help-button" class="icon" aria-label="help">\n            <game-icon icon="help"></game-icon>\n          </button>\n        </div>\n        <div class="title">\n         VORDL\n        </div>\n        <div class="menu">\n          <button id="statistics-button" class="icon" aria-label="statistics">\n            <game-icon icon="statistics"></game-icon>\n          </button>\n          <button id="settings-button" class="icon" aria-label="settings">\n            <game-icon icon="settings"></game-icon>\n          </button>\n        </div>\n      </header>\n        <div id="board-container">\n          <div id="board"></div>\n        </div>\n        <game-keyboard></game-keyboard>\n        <game-modal></game-modal>\n        <game-page></game-page>\n        <div class="toaster" id="game-toaster"></div>\n        <div class="toaster" id="system-toaster"></div>\n    </div>\n  </game-theme-manager>\n  <div id="debug-tools"></div>\n');
+  post.innerHTML = "\n  <style>\n  .toaster {\n    position: absolute;\n    top: 10%;\n    left: 50%;\n    transform: translate(-50%, 0);\n    pointer-events: none;\n    width: fit-content;\n  }\n  #game-toaster {\n    z-index: ".concat(1E3, ";\n  }\n  #system-toaster {\n    z-index: ").concat(4E3, ';\n  }\n\n  #game {\n    width: 100%;\n    max-width: var(--game-max-width);\n    margin: 0 auto;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n  }\n  header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    height: var(--header-height);\n    color: var(--color-tone-1);\n    border-bottom: 1px solid var(--color-tone-4);\n  }\n  header .title {\n    font-weight: 700;\n    font-size: 36px;\n    letter-spacing: 0.2rem;\n    text-transform: uppercase;\n    text-align: center;\n    position: absolute;\n    left: 0;\n    right: 0;\n    pointer-events: none;\n  }\n\n  @media (max-width: 360px) {\n    header .title {\n      font-size: 22px;\n      letter-spacing: 0.1rem;\n    }\n  }\n\n  #board-container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-grow: 1;\n    overflow: hidden;\n  }\n  #board {\n    display: grid;\n    grid-template-rows: repeat(6, 1fr);\n    grid-gap: 5px;\n    padding:10px;\n    box-sizing: border-box;\n  }\n  button.icon {\n    background: none;\n    border: none;\n    cursor: pointer;\n    padding: 0 4px;\n  }\n\n  #debug-tools {\n    position: absolute;\n    bottom: 0;\n  }\n\n  </style>\n  <game-theme-manager>\n    <div id="game">\n      <header>\n        <div class="menu">\n          <button id="help-button" class="icon" aria-label="help">\n            <game-icon icon="help"></game-icon>\n          </button>\n        </div>\n        <div class="title">\n         UORDL\n        </div>\n        <div class="menu">\n          <button id="statistics-button" class="icon" aria-label="statistics">\n            <game-icon icon="statistics"></game-icon>\n          </button>\n          <button id="settings-button" class="icon" aria-label="settings">\n            <game-icon icon="settings"></game-icon>\n          </button>\n        </div>\n      </header>\n        <div id="board-container">\n          <div id="board"></div>\n        </div>\n        <game-keyboard></game-keyboard>\n        <game-modal></game-modal>\n        <game-page></game-page>\n        <div class="toaster" id="game-toaster"></div>\n        <div class="toaster" id="system-toaster"></div>\n    </div>\n  </game-theme-manager>\n  <div id="debug-tools"></div>\n');
   /** @type {!Element} */
   var form = document.createElement("template");
   /** @type {string} */
@@ -7775,7 +7775,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   /** @type {string} */
   var obj = "FAIL";
   /** @type {!Array} */
-  var pedalboards = ["Неверагодна", "Цудоўна", "Выдатна", "Годна", "Добра", "Уф!"];
+  var pedalboards = ["Nievierahodna", "Cudoŭna", "Vydatna", "Hodna", "Dobra", "Uf!"];
   var DialogElement = function(e) {
     /**
      * @return {?}
@@ -7825,7 +7825,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
           var brickInput = this.$board.querySelectorAll("game-row")[this.rowIndex];
           var integer = this.boardState[this.rowIndex];
           if (value = integer, !updatedSet.includes(value) && !options.includes(value)) {
-            return brickInput.setAttribute("invalid", ""), void this.addToast("Гэтае слова мне невядома!");
+            return brickInput.setAttribute("invalid", ""), void this.addToast("Hetaje slova mnie nieviadoma!");
           }
           if (this.hardMode) {
             var that = function(x, obj, word) {
@@ -7840,7 +7840,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
                 if (word[i] === correctLetter && x[i] !== obj[i]) {
                   return {
                     validGuess : false,
-                    errorMessage : "".concat(ordinal(i + 1), " літара павінна быць ").concat(obj[i].toUpperCase())
+                    errorMessage : "".concat(ordinal(i + 1), " litara pavinna być ").concat(obj[i].toUpperCase())
                   };
                 }
               }
@@ -7865,7 +7865,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
                 if ((newValuesArr[f] || 0) < o[f]) {
                   return {
                     validGuess : false,
-                    errorMessage : "У слове павінна быць ".concat(f.toUpperCase())
+                    errorMessage : "U slovie pavinna być ".concat(f.toUpperCase())
                   };
                 }
               }
@@ -7992,7 +7992,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
       value : function() {
         if (this.gameStatus === exitCode && this.canInput) {
           if (5 !== this.tileIndex) {
-            return this.$board.querySelectorAll("game-row")[this.rowIndex].setAttribute("invalid", ""), void this.addToast("Не хапае літар!");
+            return this.$board.querySelectorAll("game-row")[this.rowIndex].setAttribute("invalid", ""), void this.addToast("Nie chapaje litar!");
           }
           this.evaluateRow();
         }
@@ -8130,7 +8130,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
         this.shadowRoot.getElementById("settings-button").addEventListener("click", function(a) {
           var body = self.$game.querySelector("game-page");
           /** @type {!Text} */
-          var debug = document.createTextNode("Наладкі");
+          var debug = document.createTextNode("Naladki");
           body.appendChild(debug);
           /** @type {!Element} */
           var node = document.createElement("game-settings");
@@ -8142,7 +8142,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
         this.shadowRoot.getElementById("help-button").addEventListener("click", function(a) {
           var s = self.$game.querySelector("game-page");
           /** @type {!Text} */
-          var t = document.createTextNode("Як гуляць");
+          var t = document.createTextNode("Jak huliać");
           s.appendChild(t);
           /** @type {!Element} */
           var container = document.createElement("game-help");
@@ -8321,7 +8321,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
               }
               if ("↵" == char) {
                 /** @type {string} */
-                span.textContent = "увод";
+                span.textContent = "uvod";
                 span.classList.add("one-and-a-half");
               }
 
@@ -8375,7 +8375,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   /** @type {!Element} */
   var $template = document.createElement("template");
   /** @type {string} */
-  $template.innerHTML = '\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 16px 0; \n    }\n    h1 {\n      font-weight: 700;\n      font-size: 16px;\n      letter-spacing: 0.5px;\n      text-transform: uppercase;\n      text-align: center;\n      margin-bottom: 10px;\n    }\n  \n    #statistics {\n      display: flex;\n      margin-bottom: \n    }\n\n    .statistic-container {\n      flex: 1;\n    }\n\n    .statistic-container .statistic {\n      font-size: 36px;\n      font-weight: 400;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      letter-spacing: 0.05em;\n      font-variant-numeric: proportional-nums;\n    }\n\n    .statistic.timer {\n      font-variant-numeric: initial;\n    }\n\n    .statistic-container .label {\n      font-size: 12px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n    }\n\n    #guess-distribution {\n      width: 80%;\n    }\n\n    .graph-container {\n      width: 100%;\n      height: 20px;\n      display: flex;\n      align-items: center;\n      padding-bottom: 4px;\n      font-size: 14px;\n      line-height: 20px;\n    }\n\n    .graph-container .graph {\n      width: 100%;\n      height: 100%;\n      padding-left: 4px;\n    }\n\n    .graph-container .graph .graph-bar {\n      height: 100%;\n      /* Assume no wins */\n      width: 0%;\n      position: relative;\n      background-color: var(--color-absent);\n      display: flex;\n      justify-content: center;\n    }\n\n    .graph-container .graph .graph-bar.highlight {\n      background-color: var(--color-correct);\n    }\n\n    .graph-container .graph .graph-bar.align-right {\n      justify-content: flex-end;\n      padding-right: 8px;\n    }\n\n    .graph-container .graph .num-guesses {\n      font-weight: bold;\n      color: var(--tile-text-color);\n    }\n\n    #statistics,\n    #guess-distribution {\n      padding-bottom: 10px;\n    }\n\n    .footer {\n      display: flex;\n      width: 100%;\n    }\n\n    .countdown {\n      border-right: 1px solid var(--color-tone-1);\n      padding-right: 12px;\n      width: 50%;\n    }\n\n    .share {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      padding-left: 12px;\n      width: 50%;\n    }\n\n    .no-data {\n      text-align: center;\n    }\n\n    button#share-button {\n      background-color: var(--key-bg-correct);\n      color: var(--key-evaluated-text-color);\n      font-family: inherit;\n      font-weight: bold;\n      border-radius: 4px;\n      cursor: pointer;\n      border: none;\n      user-select: none;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      -webkit-tap-highlight-color: rgba(0,0,0,0.3);\n      width: 80%;\n      font-size: 12px;\n      height: 52px;\n      -webkit-filter: brightness(100%);\n    }\n    button#share-button:hover {\n      opacity: 0.9;\n    }\n    button#share-button game-icon {\n      width: 24px;\n      height: 24px;\n      padding-left: 8px;\n    }\n  </style>\n\n  <div class="container">\n    <h1>Статыстыка</h1>\n    <div id="statistics"></div>\n    <h1>Гісторыя гульняў</h1>\n    <div id="guess-distribution"></div>\n    <div class="footer"></div>\n  </div>\n';
+  $template.innerHTML = '\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 16px 0; \n    }\n    h1 {\n      font-weight: 700;\n      font-size: 16px;\n      letter-spacing: 0.5px;\n      text-transform: uppercase;\n      text-align: center;\n      margin-bottom: 10px;\n    }\n  \n    #statistics {\n      display: flex;\n      margin-bottom: \n    }\n\n    .statistic-container {\n      flex: 1;\n    }\n\n    .statistic-container .statistic {\n      font-size: 36px;\n      font-weight: 400;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      letter-spacing: 0.05em;\n      font-variant-numeric: proportional-nums;\n    }\n\n    .statistic.timer {\n      font-variant-numeric: initial;\n    }\n\n    .statistic-container .label {\n      font-size: 12px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n    }\n\n    #guess-distribution {\n      width: 80%;\n    }\n\n    .graph-container {\n      width: 100%;\n      height: 20px;\n      display: flex;\n      align-items: center;\n      padding-bottom: 4px;\n      font-size: 14px;\n      line-height: 20px;\n    }\n\n    .graph-container .graph {\n      width: 100%;\n      height: 100%;\n      padding-left: 4px;\n    }\n\n    .graph-container .graph .graph-bar {\n      height: 100%;\n      /* Assume no wins */\n      width: 0%;\n      position: relative;\n      background-color: var(--color-absent);\n      display: flex;\n      justify-content: center;\n    }\n\n    .graph-container .graph .graph-bar.highlight {\n      background-color: var(--color-correct);\n    }\n\n    .graph-container .graph .graph-bar.align-right {\n      justify-content: flex-end;\n      padding-right: 8px;\n    }\n\n    .graph-container .graph .num-guesses {\n      font-weight: bold;\n      color: var(--tile-text-color);\n    }\n\n    #statistics,\n    #guess-distribution {\n      padding-bottom: 10px;\n    }\n\n    .footer {\n      display: flex;\n      width: 100%;\n    }\n\n    .countdown {\n      border-right: 1px solid var(--color-tone-1);\n      padding-right: 12px;\n      width: 50%;\n    }\n\n    .share {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      padding-left: 12px;\n      width: 50%;\n    }\n\n    .no-data {\n      text-align: center;\n    }\n\n    button#share-button {\n      background-color: var(--key-bg-correct);\n      color: var(--key-evaluated-text-color);\n      font-family: inherit;\n      font-weight: bold;\n      border-radius: 4px;\n      cursor: pointer;\n      border: none;\n      user-select: none;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      -webkit-tap-highlight-color: rgba(0,0,0,0.3);\n      width: 80%;\n      font-size: 12px;\n      height: 52px;\n      -webkit-filter: brightness(100%);\n    }\n    button#share-button:hover {\n      opacity: 0.9;\n    }\n    button#share-button game-icon {\n      width: 24px;\n      height: 24px;\n      padding-left: 8px;\n    }\n  </style>\n\n  <div class="container">\n    <h1>Statystyka</h1>\n    <div id="statistics"></div>\n    <h1>Historyja huĺniaŭ</h1>\n    <div id="guess-distribution"></div>\n    <div class="footer"></div>\n  </div>\n';
   /** @type {!Element} */
   var tpl = document.createElement("template");
   /** @type {string} */
@@ -8387,14 +8387,14 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   /** @type {!Element} */
   var cached = document.createElement("template");
   /** @type {string} */
-  cached.innerHTML = '\n  <div class="countdown">\n    <h1>Наступны ЎОРДЛІ</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      Захаваць вынік\n    </button>\n  </div>\n';
+  cached.innerHTML = '\n  <div class="countdown">\n    <h1>Nastupny UORDL</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      Zachvać vynik\n    </button>\n  </div>\n';
   var dragitemhomes = {
-    currentStreak : "Бягучая серыя",
-    maxStreak : "Найлепшая серыя",
-    winPercentage : "% перамог",
-    gamesPlayed : "Усяго гульняў",
-    gamesWon : "Перамог",
-    averageGuesses : "Сярэдняя колькасць спробаў"
+    currentStreak : "Biahučaja sieryja",
+    maxStreak : "Najliepšaja sieryja",
+    winPercentage : "% pieramoh",
+    gamesPlayed : "Usiaho huĺniaŭ",
+    gamesWon : "Pieramoh",
+    averageGuesses : "Siaredniaja koĺkasć sprobaŭ"
   };
   var XProgressbarElement = function(e) {
     /**
@@ -8424,7 +8424,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
           var cursor = document.createElement("div");
           cursor.classList.add("no-data");
           /** @type {string} */
-          cursor.innerText = "Няма дадзеных!";
+          cursor.innerText = "Niama dadzienych!";
           overlay.appendChild(cursor);
         } else {
           /** @type {number} */
@@ -8479,7 +8479,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
               /** @type {*} */
               var i = JSON.parse(window.localStorage.getItem(STORE_ID));
               /** @type {string} */
-              var level = "Bielaruski VORDL ".concat(datas);
+              var level = "Bielaruski UORDL ".concat(datas);
               /** @type {string} */
               level = level + " ".concat(active ? val : "X", "/").concat(6);
               if (currentAnime) {
@@ -8516,7 +8516,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
                   url = url + "\n";
                 }
               }), {
-                text : "".concat(level, "\n\n").concat(url.trimEnd()).concat("\n\n#vordl\n\n").concat("https://demidov91.github.io/wordle-by-lac/")
+                text : "".concat(level, "\n\n").concat(url.trimEnd()).concat("\n\n#uordl\n\n").concat("https://demidov91.github.io/wordle-by-lac/")
               };
             }({
               evaluations : self.gameApp.evaluations,
@@ -8525,9 +8525,9 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
               isHardMode : self.gameApp.hardMode,
               isWin : self.gameApp.gameStatus === CONNECTING
             }), function() {
-              self.gameApp.addToast("Вынік скапіраваны!", 2E3, true);
+              self.gameApp.addToast("Vynik skapiravany!", 2E3, true);
             }, function() {
-              self.gameApp.addToast("Не атрымалася падзяліцца вынікам", 2E3, true);
+              self.gameApp.addToast("Nie atrymalasia padzialicca vynikam", 2E3, true);
             });
           });
         }
@@ -8585,7 +8585,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   /** @type {!Element} */
   var element = document.createElement("template");
   /** @type {string} */
-  element.innerHTML = '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Адгадайце <strong>ЎОРДЛІ</strong> за 6 спробаў.</p>\n      <p>Кожная спроба павінна змяшчаць існуючае слова з пяці літар. <strong>Дж</strong> і <strong>дз</strong> лічацца за дзве літары, апостраф — за адну. Націсніце кнопку «увод», каб пацвердзіць спробу.</p>\n <p>Загадана можа быць любая часціна мовы, але ў пачатковай форме, як у слоўніку: напрыклад, назоўны склон ці інфінітыў.</p>\n     <p>Пасля кожнай здагадкі колер пліткі зменіцца, каб паказаць, наколькі ваша здагадка была блізкай да слова.</p>\n      <div class="examples">\n        <p><strong>Прыклады</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="č" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="b"></game-tile>\n            <game-tile letter="o"></game-tile>\n            <game-tile letter="r"></game-tile>\n          </div>\n          <p>Літара <strong>Č</strong> ёсць у слове і знаходзіцца на правільным месцы.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="v" evaluation="present" reveal></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="e"></game-tile>\n            <game-tile letter="t"></game-tile>\n          </div>\n          <p>Літара <strong>V</strong> ёсць у слове, але знаходзіцца на іншым месцы.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="v"></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="ć"  evaluation="absent" reveal></game-tile>\n          </div>\n          <p>Літары <strong>Ć</strong> зусім няма ў слове.</p>\n        </div>\n      </div>\n      <p><strong>Новы ЎОРДЛІ з’яўляецца кожны дзень!</strong></p>\n    </div>\n  </section>\n';
+  element.innerHTML = '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Adhadajcie <strong>UORDL</strong> za 6 sprobaŭ.</p>\n      <p>Kožnaja sproba pavinna zmiaščać isnujučaje slova z piaci litar. <strong>Dž, dź, ch</strong> ličacca za dzvie litary, susiedniaja miakka<b><i>ś</i></b>ć nie pieradajecca na piśmie. Litary <strong>G, Ł</strong> nie vykarystoŭvajucca. Nacisnicie kniopku "uvod", kab pacvierdzić sproby.</p>\n <p>Zahadana moža być liubaja čascina movy, alie ŭ pačatkovaj formie, jak u sloŭniku: napryklad, nazoŭny sklon ci infinityŭ.</p>\n     <p>Paslia kožnaj zdahadki kolier plitki zmienicca, kab pakazać, nakoĺki vaša zdahadka byla blizkaj da slova.</p>\n      <div class="examples">\n        <p><strong>Pryklady</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="h" evaluation="correct" reveal></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="r"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="ž"></game-tile>\n          </div>\n          <p>Litara <strong>H</strong> josć u slovie i znachodzicca na praviĺnym miescy.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="s"></game-tile>\n            <game-tile letter="v" evaluation="present" reveal></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="e"></game-tile>\n            <game-tile letter="t"></game-tile>\n          </div>\n          <p>Litara <strong>V</strong> josć u slovie, alie znachodzicca na inšym miescy.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="v"></game-tile>\n            <game-tile letter="i"></game-tile>\n            <game-tile letter="ć"  evaluation="absent" reveal></game-tile>\n          </div>\n          <p>Litary <strong>Ć</strong> zusim niama ŭ slovie.</p>\n        </div>\n      </div>\n      <p><strong>Novy UORDL zjaŭliajecca kožny dzień!</strong></p>\n    </div>\n  </section>\n';
   var XDrawerElement = function(e) {
     /**
      * @return {?}
