@@ -2048,7 +2048,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
     return obj;
   }));
   /** @type {string} */
-  var url = window.location.search;
+  var url = "gameState";
   var data = {
     boardState : null,
     evaluations : null,
