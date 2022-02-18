@@ -10727,7 +10727,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
                   url = url + "\n";
                 }
               }), {
-                text : "".concat(level, "\n\n").concat(url.trimEnd()).concat("\n\n#uordl\n\n").concat("https://demidov91.github.io/wordle-by-lac/?t=2")
+                text : "".concat(level, "\n\n").concat(url.trimEnd()).concat("\n\n#uordl\n\n").concat("https://demidov91.github.io/wordle-by-lac/?v=3")
               };
             }({
               evaluations : self.gameApp.evaluations,
