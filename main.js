@@ -10585,7 +10585,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
   '</style><section><div class="instructions">' +
   '<p>Adhadajcie <strong>ŬORDL</strong> za 6 sprobaŭ.</p>' +
   '<p>Kožnaja sproba pavinna zmiaščać isnujučaje slova z piaci litar. <strong>Dž, dz, dź, ch</strong> ličacca za dzvie litary, susiedniaja miakka<b><i>ś</i></b>ć nie pieradajecca na piśmie. Litary <strong>G, Ł</strong> nie vykarystoŭvajucca. Nacisnicie kniopku "uvod", kab pacvierdzić sproby.</p>' +
-  '<p><i>Усе правілы <b>беларускай лацінкі</b> даступна і з прыкладамі можна пачытаць <a target="_blank" href="https://rokas.by/be/pravily-lacinki/">па спасылцы</a></i></p>' +
+  '<p><i>Усе правілы <b>беларускай лацінкі</b> з прыкладамі даступны <a target="_blank" href="https://rokas.by/be/pravily-lacinki/">па спасылцы</a></i></p>' +
   '<p>Zahadana moža być liubaja čascina movy, alie ŭ pačatkovaj formie, jak u sloŭniku: napryklad, nazoŭny sklon ci infinityŭ.</p>' +
   '<p>Paslia kožnaj zdahadki kolier plitki zmienicca, kab pakazać, nakoĺki vaša zdahadka byla blizkaj da slova.</p>' +
   '<div class="examples"><p><strong>Pryklady</strong></p>' +
