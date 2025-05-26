@@ -7392,6 +7392,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "rubka",
 "rubki",
 "rubli",
+"rubon",
 "rucha",
 "ruchi",
 "rucin",
