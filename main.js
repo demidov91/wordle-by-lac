@@ -3322,6 +3322,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(exports) {
 "arava",
 "aravy",
 "arbat",
+"arche",	  
 "arden",
 "areal",
 "areli",
